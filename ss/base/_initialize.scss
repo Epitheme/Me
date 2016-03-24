@@ -1,6 +1,8 @@
 html, body {
 	@include full-screen;
 	@include zero-box;
+	@include background(url(../images/background.jpg) no-repeat center left);
+	background-size: cover;
 }
 
 .display-none {
