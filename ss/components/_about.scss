@@ -4,13 +4,20 @@
     	@include span-columns(4);
     	@include padding(25vh 4vw 0);
 		@include background($color-white);
+		
+		@media screen and (max-width: $bp-md) {
+			@include position(relative, 50% null null null);
+			height: 50%;
+	    	@include padding(0 4vw 5vh);
+    		@include span-columns(10);
+		}
 
 		h2.name {
 			color: $color-mineshaft;
 			font-size: em(48px);
 			text-transform: uppercase;
 		}
-	
+		
 		h3.description {
 			color: $color-mineshaft;
 			font-size: em(24px);		
@@ -23,15 +30,47 @@
 			color: $color-boulder;
 			font-size: em(24px);
 		}
+
+		@media screen and (max-width: $bp-md) {
+			h2.name, h3.description {
+				position: relative;
+				top: -12vh;
+				color: $color-white;
+				text-align: center;
+			}
+		
+			p {
+				max-width: 100%;
+				width: em(500px);
+				margin: em(16px) auto;
+				text-align: justify;
+			}
+			
+			p, h3.cta, button {
+				position: relative;
+				top: -4vh;
+			}
+		}
+
 		
 		h3.cta {
 			font-weight: 400;
+
+			@media screen and (max-width: $bp-md) {
+				text-align: center;
+			}
 		}
 		
 		a {
 			color: $color-boulder;
 			text-decoration: none;
 			border-bottom: 1px dotted $color-boulder;
+		}
+
+		footer {
+			@media screen and (max-width: $bp-md) {
+				text-align: center;
+			}
 		}
 
 		h3.credits {

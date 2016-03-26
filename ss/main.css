@@ -200,6 +200,11 @@ html, body {
   background: url(../images/background.jpg) no-repeat center left;
   background: url(../images/background.jpg) no-repeat center left;
   background-size: cover; }
+  @media screen and (max-width: 61.625em) {
+    html, body {
+      background: -webkit-linear-gradient(top, transparent, black 70%), url(../images/background.jpg) no-repeat center left;
+      background: linear-gradient(to bottom, transparent, black 70%), url(../images/background.jpg) no-repeat center left;
+      background-size: cover; } }
 
 .display-none {
   display: none;
@@ -273,6 +278,15 @@ a {
   a:active, a:focus, a:hover {
     opacity: 0.8; }
 
+.button-container {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  @media screen and (max-width: 61.625em) {
+    .button-container {
+      text-align: center; } }
+
 button {
   height: 3.125em;
   width: 15.625em;
@@ -288,6 +302,9 @@ button {
   text-transform: uppercase; }
   button:hover {
     background-color: #5fcafb; }
+  @media screen and (max-width: 61.625em) {
+    button {
+      margin: 2em auto 0; } }
 
 input {
   height: 3.125em;
@@ -339,6 +356,18 @@ html {
   background: #fdfdfd; }
   .about:last-child {
     margin-left: 0; }
+  @media screen and (max-width: 61.625em) {
+    .about {
+      position: relative;
+      top: 50%;
+      height: 50%;
+      padding: 0 4vw 5vh;
+      float: right;
+      display: block;
+      margin-left: 0%;
+      width: 100%; }
+      .about:last-child {
+        margin-left: 0; } }
   .about h2.name {
     color: #262626;
     font-size: 3em;
@@ -352,12 +381,32 @@ html {
     margin: 1em 0;
     color: #777;
     font-size: 1.5em; }
+  @media screen and (max-width: 61.625em) {
+    .about h2.name, .about h3.description {
+      position: relative;
+      top: -12vh;
+      color: #fdfdfd;
+      text-align: center; }
+    .about p {
+      max-width: 100%;
+      width: 31.25em;
+      margin: 1em auto;
+      text-align: justify; }
+    .about p, .about h3.cta, .about button {
+      position: relative;
+      top: -4vh; } }
   .about h3.cta {
     font-weight: 400; }
+    @media screen and (max-width: 61.625em) {
+      .about h3.cta {
+        text-align: center; } }
   .about a {
     color: #777;
     text-decoration: none;
     border-bottom: 1px dotted #777; }
+  @media screen and (max-width: 61.625em) {
+    .about footer {
+      text-align: center; } }
   .about h3.credits {
     margin: 0;
     color: #777; }
@@ -371,6 +420,9 @@ html {
   .social li {
     display: inline-block;
     margin: 0 0.9375em 0 0; }
+    @media screen and (max-width: 61.625em) {
+      .social li {
+        margin: 0 0.4375em; } }
     .social li a {
       display: inline-block;
       height: 3em;

@@ -1,3 +1,12 @@
+.button-container {
+	@include size(100% auto);
+	@include zero-box;
+
+	@media screen and (max-width: $bp-md) {
+		text-align: center;
+	}
+}
+
 button {
 	@include size(em(250px) em(50px));
 	@include margin(em(32px) 0 0);
@@ -17,4 +26,8 @@ button {
 	@extend %transition;
 
 	&:hover { background-color: lighten($color-malibu, 1%); }
+
+	@media screen and (max-width: $bp-md) {
+		@include margin(em(32px) auto 0);
+	}
 }

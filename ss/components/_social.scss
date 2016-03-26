@@ -9,6 +9,10 @@
 		display: inline-block;
 		@include margin(0 em(15px) 0 0);
 
+		@media screen and (max-width: $bp-md) {
+			@include margin(0 em(7px));
+		}
+
 		a {
 			display: inline-block;
 			@include size(em(48px) em(48px));
