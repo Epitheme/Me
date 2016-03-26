@@ -27,7 +27,7 @@ $color-mineshaft: #262626;
 $color-black: #1d1d1d;
 
 // Main Colors
-$color-dodgerblue: #229aff;
+$color-malibu: #5AC8FB;
 
 
 
@@ -47,11 +47,11 @@ $color-dodgerblue: #229aff;
 *****************************************************************
 ****************************************************************/
 // Typography
-$body-font: sans-serif;
-$title-font: sans-serif;;
+$body-font: "Roboto", sans-serif;
+$title-font: $body-font;
 $font-sizes: 48px 36px 24px 18px 16px 12px;
 $em-base: 16px !default;
-$default-font-weight: 400;
+$default-font-weight: 500;
 
 // Line Height
 $body-lh: 1.25;

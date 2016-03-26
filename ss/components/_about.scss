@@ -2,7 +2,41 @@
 	.about {
 		height: 100%;
     	@include span-columns(4);
-    	@include padding(30vh em(50px) 0);
+    	@include padding(25vh 4vw 0);
 		@include background($color-white);
+
+		h2.name {
+			color: $color-mineshaft;
+			font-size: em(48px);
+			text-transform: uppercase;
+		}
+	
+		h3.description {
+			color: $color-mineshaft;
+			font-size: em(24px);		
+			text-transform: uppercase;
+			opacity: 0.75;
+		}
+
+		p {
+			@include margin(em(16px) 0);
+			color: $color-boulder;
+			font-size: em(24px);
+		}
+		
+		h3.cta {
+			font-weight: 400;
+		}
+		
+		a {
+			color: $color-boulder;
+			text-decoration: none;
+			border-bottom: 1px dotted $color-boulder;
+		}
+
+		h3.credits {
+			@include margin(0);
+			color: $color-boulder;
+		}
 	}
 }

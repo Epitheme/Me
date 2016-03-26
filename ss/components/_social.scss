@@ -1,0 +1,39 @@
+.social {
+	display: block;
+	max-width: 100%;
+	@include margin(em(60px) 0 em(10px));
+	@include padding(0);
+	list-style: none;
+
+	li {
+		display: inline-block;
+		@include margin(0 em(15px) 0 0);
+
+		a {
+			display: inline-block;
+			@include size(em(48px) em(48px));
+			@include background($color-emperor);
+			border: none;
+			border-radius: 50%;
+			@extend %transition;
+		}
+
+		span {
+			display: inline-block;
+			@include size(100%);
+			background-size: em(24px) auto !important;
+		}
+	}
+
+	.email {
+		@include background(url(../images/email.png) no-repeat center center);
+	}
+
+	.twitter {
+		@include background(url(../images/twitter.png) no-repeat center center);
+	}
+
+	.instagram {
+		@include background(url(../images/instagram.png) no-repeat center center);
+	}
+}

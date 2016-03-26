@@ -1,5 +1,5 @@
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,400);
 
 html {
   font-size: 62.5%;
@@ -13,17 +13,16 @@ body {
   color: $color-black;
   font-family: $body-font;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 500;
   line-height: $body-lh;
   
 }
 
 %header {
 	font-family: $body-font;
-	font-weight: 300;
+	font-weight: 500;
 	line-height: $body-lh;
-	margin: 0 0 $sm-spacing;
-	padding: 0;
+	@include zero-box;
 }
 
 @for $index from 1 through length($font-sizes) {
@@ -42,7 +41,7 @@ p {
 }
 
 a {
-  color: $color-dodgerblue;
+  color: $color-malibu;
   text-decoration: none;
   transition: color $animation-duration $animation-timing;
 
